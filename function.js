@@ -3,14 +3,14 @@ const egoist=require ('readline-sync').question;
 // let a
 // let b
 
-// function menor (a, b){
-//     if (a < b){
-//         return a
-//     }
-//     else {
-//         return b
-//     }
-// }
+function menor (a, b){
+    if (a < b){
+        return a
+    }
+    else {
+        return b
+    }
+}
 
 // console.log(menor(100, 195))
 // Function que recebe dois numeros e retorna o menor|
@@ -178,65 +178,67 @@ const egoist=require ('readline-sync').question;
 // stringletra(c)
 
 // ||Calculadora usando function||
-let rep = true
+// let rep = true
 
 
-function Somar(operador, operador2){
+// function Somar(operador, operador2){
         
-    return operador + operador2
-}
+//     return operador + operador2
+// }
 
-function Subtrair(a, b){
+// function Subtrair(a, b){
 
-    return a - b
-}
+//     return a - b
+// }
 
-function Divisao(m, n){
+// function Divisao(m, n){
     
-    return m / n
-}
+//     return m / n
+// }
 
-    function Multi(x,y){
+//     function Multi(x,y){
 
-    return x * y
-}
+//     return x * y
+// }
 
-while(rep){
+// while(rep){
     
-    console.log("--Calculator Do Loading--")
-    console.log("1.Adicao + ")
-    console.log("2.Divisao / ")
-    console.log("3.Subtracao - ")
-    console.log("4.Multiplicacao * ")
-    console.log("5.Sair .")
-    let A = (egoist("escolha uma operacao: "))
+//     console.log("--Calculator Do Loading--")
+//     console.log("1.Adicao + ")
+//     console.log("2.Divisao / ")
+//     console.log("3.Subtracao - ")
+//     console.log("4.Multiplicacao * ")
+//     console.log("5.Sair .")
+//     let A = (egoist("escolha uma operacao: "))
     
-    if (A == "+"){
-        operador = parseFloat(egoist("Digite o primeiro num: "))
-        operador2 = parseFloat(egoist("Digite o segundo num: "))
-        let r = Somar(operador, operador2)
-        console.log(r)
-    }
-    else if (A == "-"){
-        a = parseFloat(egoist("Digite o primeiro num: "))
-        b = parseFloat(egoist("Digite o segundo num: "))
-        let re = Subtrair(a, b)
-        console.log(re)
-    }
-    else if (A == "/"){
-        m = parseFloat(egoist("Digite o primeiro num: "))
-        n = parseFloat(egoist("Digite o segundo num: "))
-        let res = Divisao(m, n)
-        console.log(res)
-    }
-    else if (A == "*"){
-        x = parseFloat(egoist("Digite o primeiro num: "))
-        y = parseFloat(egoist("Digite o segundo num: "))
-        let resultado = Multi(x, y)
-        console.log(resultado)
-    }
-    else if (A == "."){
-        console.log("Obrigado, Volte sempre!")
-        break
-    }
-}
+//     if (A == "+"){
+//         operador = parseFloat(egoist("Digite o primeiro num: "))
+//         operador2 = parseFloat(egoist("Digite o segundo num: "))
+//         let r = Somar(operador, operador2)
+//         console.log(r)
+//     }
+//     else if (A == "-"){
+//         a = parseFloat(egoist("Digite o primeiro num: "))
+//         b = parseFloat(egoist("Digite o segundo num: "))
+//         let re = Subtrair(a, b)
+//         console.log(re)
+//     }
+//     else if (A == "/"){
+//         m = parseFloat(egoist("Digite o primeiro num: "))
+//         n = parseFloat(egoist("Digite o segundo num: "))
+//         let res = Divisao(m, n)
+//         console.log(res)
+//     }
+//     else if (A == "*"){
+//         x = parseFloat(egoist("Digite o primeiro num: "))
+//         y = parseFloat(egoist("Digite o segundo num: "))
+//         let resultado = Multi(x, y)
+//         console.log(resultado)
+//     }
+//     else if (A == "."){
+//         console.log("Obrigado, Volte sempre!")
+//         break
+//     }
+// }
+
+exports.menor = menor
