@@ -9,9 +9,24 @@ Object =
                 1: "um",
                 2: "dois",
                 3: "tres"
-            }
+            },
+    number: 55,
+    negros: 15
 }
 
-// delete Object.lista
+console.log("Antes: ", Object)
+
+Object. n = 1000
+
+console.log("Add: ", Object["n"])
+
+Object.Thiago = 200
+
+console.log("Alterei: ", Object["Thiago"])
+
+delete Object.lista
+
+console.log("Removi: ", Object["lista"])
 
 console.log(Object)
+
